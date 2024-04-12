@@ -16,6 +16,10 @@ export default {
         'xs': '500px',
       },
 
+      maxWidth: {
+        site: '1600px',
+      },
+
       colors: {
       },
 

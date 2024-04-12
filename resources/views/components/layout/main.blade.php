@@ -1,3 +1,3 @@
-<main role="main" class="flex flex-col max-w-4xl mx-auto w-full">
+<main role="main" class="w-full">
   {{ $slot }}
 </main>
