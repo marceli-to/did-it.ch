@@ -20,4 +20,4 @@
 @vite('resources/css/app.css')
 @livewireStyles
 </head>
-<body class="antialiased p-24 lg:p-48 font-figtree-extrabold text-lg xl:text-xl leading-[1.2] max-w-site mx-auto">
+<body class="antialiased p-24 lg:p-36 2xl:p-48 font-figtree-extrabold text-lg 2xl:text-xl leading-[1.2] max-w-site mx-auto flex flex-col min-h-screen">
