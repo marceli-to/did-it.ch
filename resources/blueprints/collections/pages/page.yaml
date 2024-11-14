@@ -1,0 +1,102 @@
+title: Page
+tabs:
+  main:
+    display: Content
+    sections:
+      -
+        display: Content
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Titel
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+              localizable: true
+          -
+            handle: page_elements
+            field:
+              collapse: true
+              previews: true
+              fullscreen: true
+              sets:
+                content_elements:
+                  display: 'Content elements'
+                  instructions: null
+                  icon: null
+                  sets:
+                    page_section:
+                      display: 'Page section'
+                      instructions: 'Add a page section'
+                      icon: layout-split-horizontal
+                      fields:
+                        -
+                          import: page_section
+                    fullscreen_image:
+                      display: 'Fullscreen image'
+                      instructions: 'Add a fullscreen header image'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: fullscreen_image
+                    image:
+                      display: Image
+                      instructions: 'Add a content image'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: image
+              type: replicator
+              display: Inhalte
+              icon: replicator
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              localizable: true
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            import: seo
+  settings:
+    display: Settings
+    sections:
+      -
+        display: Settings
+        fields:
+          -
+            import: settings
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

@@ -1,0 +1,41 @@
+{{ if type == 'fullscreen_image' }}
+  {{ partial:components/media/image/fullscreen }}
+{{ /if }}
+
+{{ if type == 'image' }}
+  <div class="max-w-site mx-auto mb-68">
+    <div class="grid grid-cols-8 md:grid-cols-16 gap-x-16 xl:px-0">
+      <div class="col-span-full xl:col-span-12 xl:col-start-3">
+        {{ partial:components/media/image/image class="w-full h-full object-cover aspect-[16/10] lg:aspect-[16/9]" }}
+      </div>
+    </div>
+  </div>
+{{ /if }}
+
+{{ if type == 'page_section' }}
+  {{ partial:layout/inner class="first-of-type:pt-16 first-of-type:md:pt-32 first-of-type:lg:pt-48 first-of-type:xl:pt-72 lg:ml-82 xl:ml-auto" }}
+    <div class="col-span-8 md:col-span-12 lg:col-span-3 xl:col-start-3">
+      <h1 class="font-figtree-extrabold font-extrabold lg:mb-0 uppercase tracking-wide">
+        {{ title }}
+      </h1>
+    </div>
+    <div class="col-span-8 md:col-span-16 lg:col-span-12 xl:col-span-9 xl:col-start-6">
+      <div class="sm:grid sm:grid-cols-12 sm:gap-x-16">
+      {{ elements }}
+        {{ if type == 'team_member' }}
+          {{ partial:components/cards/team_member }}
+        {{ /if }}
+
+        {{ if type == 'editor' }}
+          {{ partial:components/cards/text }}
+        {{ /if }}
+
+        {{ if type == 'entity' }}
+          {{ partial:components/cards/entity }}
+        {{ /if }}
+
+      {{ /elements }}
+      </div>
+    </div>
+  {{ /partial:layout/inner }}
+{{ /if }}

@@ -1,0 +1,31 @@
+{{ if is_homepage }}
+  <main role="main" class="flex-grow relative">
+    <figure class="absolute w-full h-[calc(100dvh_-_80px)] lg:h-[calc(100dvh_-_144px)] z-5">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="/assets/did-it-visual-large.jpg" type="image/jpeg">
+        <img 
+          src="/assets/did-it-visual-small.jpg" 
+          alt="{{ image:alt }}" 
+          title="{{ image:alt }}" 
+          height="{{ image:height }}" 
+          width="{{ image:width }}"
+          class="block w-full h-[calc(100dvh_-_80px)] lg:h-[calc(100dvh_-_144px)] object-cover"
+          loading="lazy">
+      </picture>
+    </figure>
+    <div class="fixed bottom-30 left-16 xl:left-0 lg:bottom-72 w-full">
+      <div class="w-full grid grid-cols-8 md:grid-cols-16 gap-x-16 max-w-site mx-auto">
+      <div class="col-span-7 md:col-span-6 xl:col-span-4 xl:col-start-3">
+        <div class="text-white">
+          {{ partial:icons/ready class="w-144 lg:w-[260px] h-auto" }}
+        </div>
+      </div>  
+    </div>
+  </main>
+{{ else }}
+  <main role="main" class="w-full flex-grow">
+    {{ template_content }}
+  </main>
+{{ /if }}
+
+

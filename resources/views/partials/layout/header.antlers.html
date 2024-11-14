@@ -1,0 +1,29 @@
+<header class="bg-white sticky top-0 z-20 w-full h-80 lg:h-144 flex lg:py-0">
+  <div class="w-full grid grid-cols-8 md:grid-cols-16 gap-x-16 px-16 xl:px-0 max-w-site mx-auto py-16 lg:py-24">
+    <div class="col-span-7 md:col-span-6 xl:col-span-4 xl:col-start-2">
+      <a 
+        href="{{ site:url }}" 
+        title="Home"
+        :class="{ 'is-active': menu === true }"
+        class="group relative">
+        {{ partial:icons/logo class="w-125 lg:w-200 h-auto relative xl:-left-42 lg:top-16" }}
+      </a>
+    </div>
+    <div class="col-span-1 md:col-span-10 lg:col-span-4 lg:col-start-13 xl:col-span-3 xl:col-start-14 mt-4 lg:mt-0">
+      <a 
+        href="javascript:;" 
+        x-on:click="menu = ! menu" 
+        title="{{ "Menü anzeigen" | trans }}"
+        :class="{ 'is-active': menu === true }"
+        class="group flex justify-end lg:hidden">
+        <span x-show="menu === false">
+          {{ partial:icons/burger class="w-24 h-auto" }}
+        </span>
+        <span x-cloak x-show="menu === true">
+          {{ partial:icons/cross class="w-20 h-auto text-black" }}
+        </span>
+      </a>
+      {{ partial:menu/wrapper }}
+    </div>
+  </div>
+</header>

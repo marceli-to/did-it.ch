@@ -1,5 +1,16 @@
-/**
- * Typography - Webfonts
- * -----------------------------------------------------------------------------
- */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&display=swap')
+@font-face {
+  font-family: 'figtree-regular';
+  src: url('fonts/Figtree-Regular.woff2') format('woff2'), url('fonts/Figtree-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'figtree-extrabold';
+  src: url('fonts/Figtree-ExtraBold.woff2') format('woff2'), url('fonts/Figtree-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+

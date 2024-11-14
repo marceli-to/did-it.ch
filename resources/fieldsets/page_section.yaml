@@ -1,0 +1,58 @@
+title: 'Page section'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Title
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: elements
+    field:
+      collapse: true
+      previews: true
+      fullscreen: true
+      sets:
+        elements:
+          display: Elements
+          instructions: null
+          icon: null
+          sets:
+            team_member:
+              display: 'Team Member'
+              instructions: 'Add a team member'
+              icon: text-formatting-image-top
+              fields:
+                -
+                  import: team_member
+            entity:
+              display: Entity
+              instructions: 'Add an entity (i.e. Contact)'
+              icon: form-address-field
+              fields:
+                -
+                  import: entity
+            editor:
+              display: 'Text editor'
+              instructions: 'Add a text editor'
+              icon: text-formatting-markdown
+              fields:
+                -
+                  import: editor
+      type: replicator
+      display: Elements
+      icon: replicator
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

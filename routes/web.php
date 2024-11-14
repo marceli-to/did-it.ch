@@ -1,7 +1,6 @@
 <?php
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PageController;
 
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +13,6 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::view('/', 'pages.home')->name('page.home');
-
-
-
-
-
+// Route::statamic('example', 'example-view', [
+//    'title' => 'Example'
+// ]);

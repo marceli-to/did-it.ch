@@ -1,11 +1,27 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-4de7399f.css",
+    "file": "assets/app-81286eda.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
+  "resources/css/fonts/Figtree-ExtraBold.woff": {
+    "file": "assets/Figtree-ExtraBold-a706b375.woff",
+    "src": "resources/css/fonts/Figtree-ExtraBold.woff"
+  },
+  "resources/css/fonts/Figtree-ExtraBold.woff2": {
+    "file": "assets/Figtree-ExtraBold-64e24cef.woff2",
+    "src": "resources/css/fonts/Figtree-ExtraBold.woff2"
+  },
+  "resources/css/fonts/Figtree-Regular.woff": {
+    "file": "assets/Figtree-Regular-3e05a88a.woff",
+    "src": "resources/css/fonts/Figtree-Regular.woff"
+  },
+  "resources/css/fonts/Figtree-Regular.woff2": {
+    "file": "assets/Figtree-Regular-2b543775.woff2",
+    "src": "resources/css/fonts/Figtree-Regular.woff2"
+  },
   "resources/js/app.js": {
-    "file": "assets/app-ef966319.js",
+    "file": "assets/app-154cb3de.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

@@ -2,38 +2,68 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 export default {
-  
   content: [
-    "./resources/**/*.blade.php",
-    "./resources/**/*.js",
-    "./resources/**/*.vue",
+    './resources/**/*.antlers.html',
+    './resources/**/*.antlers.php',
+    './resources/**/*.blade.php',
+    './resources/**/*.vue',
+    './resources/**/*.js',
+    './content/**/*.md'
   ],
-  
+
   theme: {
     extend: {
 
       screens: {
-        'xs': '500px',
+        'xs': '414px',
+      },
+
+      gridTemplateColumns: {
+        '16': 'repeat(16, minmax(0, 1fr))',
+      },
+
+      gridColumn: {
+        'span-13': 'span 13 / span 13',
+        'span-14': 'span 14 / span 14',
+        'span-15': 'span 15 / span 15',
+        'span-16': 'span 16 / span 16',
+      },
+
+      gridColumnStart: {
+        '13': '13',
+        '14': '14',
+        '15': '15',
+        '16': '16',
       },
 
       maxWidth: {
         site: '1600px',
       },
-
-      colors: {
-      },
-
+      
       fontFamily: {
-        'figtree-extrabold': ['Figtree', ...defaultTheme.fontFamily.sans],
+        'figtree-regular': ['figtree-regular', ...defaultTheme.fontFamily.sans],
+        'figtree-extrabold': ['figtree-extrabold', ...defaultTheme.fontFamily.sans],
       },
 
       fontSize: {
-        'base': '1rem', // 16px
-        'md': '1.125rem', // 18px
-        'lg': '1.5rem', // 24px
-        'xl' : '1.875rem', // 30px
+        'sm': '1rem',       // 16px
+        'base': '1.125rem', // 18px
+        'md': '1.5rem',     // 24px
+        'lg': '1.75rem',     // 28px
+        'xl': '2.5rem',     // 40px
+        '2xl': '3rem',      // 48px
+        '3xl': '6rem',      // 96px
       },
 
+      colors: {
+        'azure': '#ff0099',
+      },
+
+      // add underline offset
+      textUnderlineOffset: {
+        '3': '0.1875rem',
+      },
+      
     },
 
     spacing: {
@@ -288,11 +318,15 @@ export default {
       '248': '15.5rem',
       '249': '15.5625rem',
       '250': '15.625rem',
-    },
+      '260': '16.25rem',
+      '270': '16.875rem',
+      '280': '17.5rem',
+      '290': '18.125rem',
+      '300': '18.75rem',
+    }
   },
 
   plugins: [
-    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
   ],
-}
-
+};

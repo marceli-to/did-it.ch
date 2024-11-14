@@ -1,0 +1,36 @@
+title: Image
+fields:
+  -
+    handle: image
+    field:
+      max_files: 1
+      min_files: 1
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: Bild
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      localizable: false
+  -
+    handle: caption
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Caption
+      icon: text
+      localizable: true
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

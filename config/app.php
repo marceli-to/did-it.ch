@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Statamic'),
 
     /*
     |--------------------------------------------------------------------------
@@ -83,7 +83,7 @@ return [
     |
     */
 
-    'locale' => 'de_CH',
+    'locale' => 'de',
 
     /*
     |--------------------------------------------------------------------------
@@ -96,7 +96,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'de',
 
     /*
     |--------------------------------------------------------------------------
@@ -182,9 +182,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-      // 'Example' => App\Facades\Example::class,
+        // 'Example' => App\Facades\Example::class,
     ])->toArray(),
-    'ApartmentHelper' => App\Helpers\ApartmentHelper::class,
-
 
 ];

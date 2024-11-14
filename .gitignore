@@ -2,6 +2,7 @@
 /node_modules
 /public/hot
 /public/storage
+/public/vendor/statamic
 /storage/*.key
 /vendor
 .env
@@ -13,8 +14,16 @@ Homestead.yaml
 auth.json
 npm-debug.log
 yarn-error.log
+.DS_Store
 /.fleet
 /.idea
 /.vscode
+public/robots.txt
+public/.htaccess
 INSTALL.txt
-/public/robots.txt
+
+public/assets
+public/img
+resources/users
+users
+content
