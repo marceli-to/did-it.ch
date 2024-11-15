@@ -3,16 +3,13 @@ h1 {
 }
 
 h2 {
-  @apply font-figtree-regular
+  @apply font-figtree-extrabold font-extrabold
 }
 
 .content h2 {
   @apply mb-24
 }
 
-.content h2:not(:first-of-type) {
-  @apply mt-72
-}
 
 .privacy h2:not(:first-of-type) {
   @apply mt-0
@@ -23,9 +20,9 @@ h3 {
 }
 
 .privacy h2 {
-  @apply font-figtree-regular mb-24
+  @apply mb-24
 }
 
 .privacy h3 {
-  @apply mb-16
+  @apply font-figtree-extrabold font-extrabold mb-16
 }

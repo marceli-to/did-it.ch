@@ -14,13 +14,14 @@
 
 {{ if type == 'page_section' }}
   {{ partial:layout/inner class="first-of-type:pt-16 first-of-type:md:pt-32 first-of-type:lg:pt-48 first-of-type:xl:pt-72 lg:ml-82 xl:ml-auto" }}
-    <div class="col-span-8 md:col-span-12 lg:col-span-3 xl:col-start-3">
-      <h1 class="font-figtree-extrabold font-extrabold lg:mb-0 uppercase tracking-wide">
-        {{ title }}
-      </h1>
-    </div>
-    <div class="col-span-8 md:col-span-16 lg:col-span-12 xl:col-span-9 xl:col-start-6">
-      <div class="sm:grid sm:grid-cols-12 sm:gap-x-16">
+    {{ if section_title }}
+      <div class="col-span-8 md:col-span-12 lg:col-span-3 xl:col-start-3">
+        <h1 class="font-figtree-extrabold font-extrabold lg:mb-0 uppercase tracking-wide">
+          {{ title }}
+        </h1>
+      </div>
+    {{ /if }}
+    <div class="col-span-8 md:col-span-16 lg:col-span-12 xl:col-span-9 xl:col-start-6 md:grid md:grid-cols-subgrid md:gap-x-16">
       {{ elements }}
         {{ if type == 'team_member' }}
           {{ partial:components/cards/team_member }}
@@ -35,7 +36,6 @@
         {{ /if }}
 
       {{ /elements }}
-      </div>
     </div>
   {{ /partial:layout/inner }}
 {{ /if }}

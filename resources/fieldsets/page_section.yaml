@@ -1,7 +1,7 @@
 title: 'Page section'
 fields:
   -
-    handle: title
+    handle: section_title
     field:
       input_type: text
       antlers: false

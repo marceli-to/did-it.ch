@@ -16,13 +16,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-}
-
-main p:not(:last-of-type) {
+main p:not(:last-child) {
   @apply mb-24
 }
-
 
 main a {
   @apply underline underline-offset-3 hover:no-underline
@@ -33,26 +29,25 @@ main p + ul {
 }
 
 main ul {
-  @apply list-disc m-0
+  @apply !list-['–_']
 }
 
-main ul:not(:last-of-type) {
+main ul:not(:last-child) {
   @apply mb-24
 }
 
-main li p {
-  @apply inline
+main ul p {
+  @apply mb-0 inline;
 }
 
-main li {
-  @apply pl-14 -indent-17 list-none;
+main ul li {
+  @apply pl-8 ml-16 list-item mb-8;
 }
 
-main li:before {
-  content: "– ";
-  margin-right: 5px;
+main ul {
+  @apply list-disc m-0
 }
 
 strong {
-  @apply font-figtree-regular font-medium
+  @apply font-figtree-extrabold font-extrabold
 }

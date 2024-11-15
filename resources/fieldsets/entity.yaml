@@ -1,23 +1,10 @@
 title: Location
 fields:
   -
-    handle: code
-    field:
-      input_type: text
-      antlers: false
-      type: text
-      display: Code
-      icon: text
-      localizable: false
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      replicator_preview: true
-      hide_display: false
-  -
     handle: description
     field:
       buttons:
+        - h2
         - h3
         - bold
         - unorderedlist
