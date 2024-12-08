@@ -1,0 +1,14 @@
+<nav class="mt-48 lg:mt-0 lg:absolute lg:top-0 lg:right-16 lg:z-40 {{ class }}">
+  <ul class="flex gap-x-8 justify-end">
+    {{ locales current_first="false" }}
+      <li>
+        <a 
+          href="{{ permalink }}" 
+          title="{{ locale:locale }}"
+          class="transition-colors text-sm uppercase {{ site:short_locale == locale:locale ? '' : '' }}">
+          {{ locale:locale }}
+        </a
+      </li>
+    {{ /locales }}
+  </ul>
+</nav>

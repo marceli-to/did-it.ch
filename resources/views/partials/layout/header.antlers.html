@@ -9,7 +9,7 @@
         {{ partial:icons/logo class="w-125 lg:w-200 h-auto relative xl:-left-42 lg:top-16" }}
       </a>
     </div>
-    <div class="col-span-1 md:col-span-10 lg:col-span-4 lg:col-start-13 xl:col-span-3 xl:col-start-14 mt-4 lg:mt-0">
+    <div class="col-span-1 md:col-span-10 lg:col-span-4 lg:col-start-12 xl:col-span-3 xl:col-start-13 mt-4 lg:mt-0">
       <a 
         href="javascript:;" 
         x-on:click="menu = ! menu" 
@@ -23,7 +23,8 @@
           {{ partial:icons/cross class="w-20 h-auto text-black" }}
         </span>
       </a>
-      {{ partial:menu/wrapper }}
+      {{ partial:menu/main/wrapper }}
     </div>
+    {{ partial:menu/language/wrapper class="hidden lg:flex" }}
   </div>
 </header>

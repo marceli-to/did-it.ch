@@ -7,16 +7,16 @@
   x-transition:leave="transition ease-in duration-150"
   x-transition:leave-start="translate-x-0"
   x-transition:leave-end="translate-x-full"
-  class="bg-white lg:bg-transparent fixed lg:relative right-0 top-80 lg:top-0 z-40 w-180 lg:w-full h-[calc(100%_-_80px)] lg:h-auto overflow-y-auto pr-16 lg:!pr-0 lg:!block">
+  class="bg-white lg:bg-transparent fixed lg:relative right-0 top-80 lg:top-0 z-40 w-260 lg:w-full h-[calc(100%_-_80px)] lg:h-auto overflow-y-auto pr-16 lg:!pr-0 lg:!block">
   <nav class="text-black uppercase tracking-wider">
-    <ul class="flex flex-col lg:flex-row gap-y-20 lg:gap-y-0 lg:gap-x-20 text-right lg:text-left">
+    <ul class="lg:mt-20 flex flex-col lg:flex-row gap-y-20 lg:gap-y-0 lg:gap-x-20 text-right lg:text-left">
       {{ nav:main }}
-        {{ partial:menu/item }}
+        {{ partial:menu/main/item }}
       {{ /nav:main }}
     </ul>
     <ul class="flex flex-col gap-y-16 mt-48 text-right lg:hidden">
       {{ nav:privacy }}
-        {{ partial:menu/item class="text-sm" }}
+        {{ partial:menu/main/item class="text-sm" }}
       {{ /nav:privacy }}
     </ul>
   </nav>
