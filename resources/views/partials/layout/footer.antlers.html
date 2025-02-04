@@ -1,5 +1,11 @@
 <footer class="hidden lg:block absolute bottom-16 right-16 z-40 text-white">
-  <nav>
+  <nav class="flex gap-x-32">
+    <a 
+      href="https://axs.aero/"
+      title="axs.aero"
+      target="_blank">
+      {{ partial:icons/logo-axs class="w-48 h-auto mt-2" }}
+    </a>
     <ul class="flex gap-x-16">
       {{ nav:privacy }}
         {{ partial:menu/main/item class="font-figtree-regular font-normal text-sm {{ !is_homepage ? 'text-black' : 'text-white hover:text-black' }}" }}
